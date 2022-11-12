@@ -1,7 +1,5 @@
 body{
     margin: 0;
-}
-h1,h2,h3,p{
     font-family: roboto;
 }
 
@@ -31,21 +29,95 @@ a{
     margin: 0;
 }
 
+
+#about-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.1em;
+    text-align: center;
+    
+}
+
 .about-content{
-    background-color: red;
-    display: flexbox;
+    display: flex;
     flex-direction: row;
-    max-width: 99%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .biography-div{
-    background-color: blue;
-    max-width: 40%;
+    width: 50%;
+    display: flex;
+}
+
+.biography-text{
+    background-color: none;
+    margin: auto;
+    text-align: left;
+    width: 90%;
 }
 
 .skills-div{
-    background-color: green;
-    max-width: 40%;
+    width: 50%;
 }
 
+.skills-text p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.skill-logo{
+    height: 50px;
+    margin: 0 1.5rem 0.5rem 1.5rem;
+}
+
+.skill-logo img{
+    height: 100%;
+}
+
+.webdev-skills{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.44rem;
+}
+
+footer{
+    text-align: center;
+}
+
+#projects-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card{
+    display: flex;
+    width: 95%;
+}
+
+.project-ss{
+    width: 50%;
+}
+
+.project-ss img{
+    width: 100%;
+    border-style: solid;
+    border-radius: 0.8rem;
+}
+
+.project-column-2{
+    width: 50%;
+}
+
+.project-text{
+    width: 90%;
+    margin: auto;
+}
+
+.btn-portfolio{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
