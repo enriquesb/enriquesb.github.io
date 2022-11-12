@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+h1,h2,h3,p{
+    font-family: roboto;
+}
+
+a{
+    color: black;
+}
+
+.dark-background{
+    background-color: black;
+    color: white;
+}
+
+.home-icons{
+    font-size: 2rem;
+    padding-top: 0.5em;
+}
+
+#home-div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-div h1{
+    margin: 0;
+}
+
+.about-content{
+    background-color: red;
+    display: flexbox;
+    flex-direction: row;
+    max-width: 99%;
+    justify-content: space-between;
+}
+
+.biography-div{
+    background-color: blue;
+    max-width: 40%;
+}
+
+.skills-div{
+    background-color: green;
+    max-width: 40%;
+}
+
