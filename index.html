@@ -12,9 +12,13 @@
     <script src="https://kit.fontawesome.com/3bfaead41e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="nav-bar-div" class="dark-background">
-        Navigation Bar
-    </div>
+    <nav class="dark-background">
+        <ul>
+            <li><a href="#contact-div">Contacto</a></li>
+            <li><a href="#projects-div">Proyectos</a></li>
+            <li><a href="#about-div">Acerca de mí</a></li>           
+        </ul>
+    </nav>
     <div id="home-div">
         <h1> Hola, soy Enrique.</h1>
         <h1>Ingeniero y Desarrollador Web.</h1>
@@ -105,27 +109,39 @@
         <h2>PROYECTOS</h2>
         <div class="project-card">
             <div class="project-ss"">
+                <img src="images/projects-ss/ss-rating component.png" alt="Portfolio project screenshot">
+            </div>
+            <div class="project-column-2">
+                <div class="project-text">
+                    <h3>Interactive rating component</h3>
+                    <p class="project-tags">HTML CSS JavaScript Responsive Flexbox</p>
+                    <p class="project-description">Tarjeta interactiva que recolecta la puntuación de usuario y actualiza el DOM para reflejar la opción seleccionada. Resultado de un reto de <a href="frontendmentor.com.">frontendmentor.com.</a> </p>
+                    <a href="https://quiet-stroopwafel-1181ef.netlify.app/" class="btn-portfolio" target="_blank">Ver online</a>
+                    <a href="https://github.com/enriquesb/interactive-rating-component" class="btn-portfolio" target="_blank">Ver código</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-ss"">
                 <img src="images/projects-ss/ss-portfolio.png" alt="Portfolio project screenshot">
             </div>
             <div class="project-column-2">
                 <div class="project-text">
-                    <div class="project-tags">
-                        <h3>Portafolio personal</h3>
-                        <p>HTML CSS JavaScript Responsive Flexbox</p>
-                     </div>
-                     <div>
-                         <p>Portafolio personal construido desde cero utilizando HTML, CSS y JavaScript.</p>
-                     </div>
-
-                     <a href="" class="btn-portfolio">Ver online</a>
-                     <a href="" class="btn-portfolio">Ver código</a>
+                    <h3>Portafolio personal</h3>
+                    <p class="project-tags">HTML CSS JavaScript Responsive Flexbox</p>
+                    <p class="project-description"> Portafolio personal construido desde cero utilizando HTML, CSS y JavaScript.</p>
                 </div>
             </div>
         </div>
     </div>
     <div id="contact-div" class="dark-background">
-        <h2>Contacto</h2>
-        <p>Aquí va un formulario de contacto.</p>
+        <h2>CONTACTO</h2>
+        <div class="contact-icons">
+            <a href="https://github.com/enriquesb" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/enrique-sierra-bravo-354023115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:enriquesb1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        
     </div>
     <footer>
         <p>© 2022, Construido y diseñado por Enrique Sierra Bravo.</p>
