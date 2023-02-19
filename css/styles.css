@@ -17,11 +17,21 @@ nav {
   padding: auto;
 }
 
+nav .container {
+  margin: 0 auto;
+}
+
 nav a {
+  float: right;
   color: white;
   text-decoration: none;
   padding: 0.8rem 1em;
   display: block;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #393e46;
 }
 
 nav ul {
@@ -31,12 +41,8 @@ nav ul {
   overflow: hidden;
 }
 
-nav li {
-  float: right;
-}
-
-nav a:hover {
-  background-color: #393e46;
+nav .expand-icon {
+  display: none;
 }
 
 .dark-background {
