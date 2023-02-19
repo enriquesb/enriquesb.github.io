@@ -199,7 +199,7 @@ nav a:hover {
     width: 100%;
     border-style: solid;
     border-radius: 0.8rem;
-    border-color: red;
+    border-color: black;
     overflow: hidden;
   }
 
@@ -219,6 +219,7 @@ nav a:hover {
 
 #contact-div {
   text-align: center;
+  padding-top: 0.5rem;
 }
 
 #contact-div h2 {
