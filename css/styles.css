@@ -41,8 +41,31 @@ nav ul {
   overflow: hidden;
 }
 
-nav .expand-icon {
+.expand-icon {
   display: none;
+}
+
+@media (max-width: 650px) {
+  /*.expand-icon {
+    float: right;
+    display: block;
+  }*/
+
+  .nav-links {
+    display: none;
+  }
+
+  .expand-icon {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+
+  .nav-links.responsive {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
 
 .dark-background {
