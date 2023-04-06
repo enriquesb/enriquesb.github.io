@@ -6,7 +6,7 @@
 
   /* Neutral colors */
   --grayish-blue: hsl(233, 8%, 35%);
-  --light-grayish-blue: hsl(220, 16%, 80%);
+  --light-grayish-blue: hsl(220, 16%, 85%);
   --very-light-gray: hsl(0, 0%, 94%);
   --white: hsl(0, 0%, 100%);
 }
@@ -140,9 +140,38 @@ body {
   display: inline-block;
   margin-top: 0.5em;
   background: rgb(49, 211, 92);
-  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 70%);
+  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
   color: var(--dark-blue);
-  padding: 0.6em 1.5em;
+  color: var(--white);
+  padding: 0.6em 1em;
   border-radius: 0.6em;
   text-decoration: none;
+}
+
+#contact-div {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 1em;
+}
+
+#contact-div > h3 {
+  color: white;
+  font-size: 1.1em;
+}
+
+.contact-icons > a {
+  color: white;
+  font-size: 2em;
+  margin: 0 0.1em;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+footer p {
+  color: var(--light-grayish-blue);
+  font-size: 0.8em;
 }
