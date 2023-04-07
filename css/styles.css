@@ -60,6 +60,51 @@ body {
   outline: 2px solid red;
 }
 
+nav {
+  height: 3em;
+}
+
+/* nav p {
+  display: inline-block;
+  margin: 1em 0;
+} */
+
+nav > img {
+  display: inline-block;
+  /* margin: 0.5em 0.625em; */
+}
+
+.esb-logo {
+  height: 2em;
+  margin: 0.5em 0.7em;
+}
+
+.open-menu-btn {
+  float: right;
+  height: 1em;
+  margin: 1em 0.7em 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links ul {
+  background-color: white;
+  /* border: 2px solid blue; */
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  margin: 1em 0;
+}
+
 #home-div {
   height: 80vh;
   /* background-color: red; */
