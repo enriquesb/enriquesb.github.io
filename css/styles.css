@@ -24,13 +24,13 @@ select {
   font: inherit;
 }
 
-img,
+/* img,
 picture,
 svg,
 video {
   display: block;
   max-width: 100%;
-}
+} */
 
 h1,
 h2,
@@ -56,33 +56,115 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-.border-red {
-  outline: 2px solid red;
-}
-
 nav {
-  height: 3em;
-}
-
-/* nav p {
-  display: inline-block;
-  margin: 1em 0;
-} */
-
-nav > img {
-  display: inline-block;
-  /* margin: 0.5em 0.625em; */
+  overflow: visible;
+  height: 3rem;
 }
 
 .esb-logo {
-  height: 2em;
-  margin: 0.5em 0.7em;
+  width: 2em;
+  margin: 0.5rem 0.7em;
+  display: inline-block;
 }
 
 .open-menu-btn {
-  float: right;
-  height: 1em;
-  margin: 1em 0.7em 0;
+  height: 2em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0.5em;
+}
+
+.close-menu-btn {
+  height: 2.1em;
+  position: absolute;
+  top: 0.45rem;
+  right: 1.1em;
+  padding: 0.25em;
+}
+
+.nav-links {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, var(--dark-blue) 5%, rgba(1, 1, 1, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+.nav-menu-show {
+  transform: scale(1, 1);
+}
+
+.nav-btn-hide {
+  visibility: hidden;
+}
+
+.nav-ul {
+  background-color: white;
+  list-style: none;
+  margin-top: 5em;
+  text-align: center;
+  width: 60%;
+  border-radius: 0.5em;
+}
+
+.nav-li {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0.8em;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.nav-links a {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-links.nav-menu-show a {
+  opacity: 1;
+}
+
+/*
+
+@media (min-width: 500px) {
+  div.nav-links {
+    display: inline;
+  }
+
+  nav .nav-links ul {
+    border: 2px solid red;
+    border-radius: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    visibility: visible;
+    width: auto;
+  }
+
+  .nav-links ul li {
+    border: 2px solid blue;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links ul li a {
+    display: inline;
+  }
+
+  .open-menu-btn {
+    visibility: hidden;
+  }
 }
 
 .nav-links {
@@ -111,7 +193,7 @@ nav > img {
 
 .hidden-menu {
   visibility: hidden;
-}
+} */
 
 #home-div {
   height: 80vh;
