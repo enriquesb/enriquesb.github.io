@@ -117,7 +117,63 @@ nav {
   border-radius: 0.5em;
 }
 
-.nav-li {
+@media (min-width: 500px) {
+  .open-menu-btn,
+  .close-menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    transform: none;
+    background: transparent;
+    position: static;
+    width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links ul {
+    background-color: transparent;
+    margin-top: 0;
+    /* border: 1px solid red; */
+    width: auto;
+    border-radius: 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0.5em;
+  }
+
+  .nav-li {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0.8125rem 0.25em;
+    margin: 0 0.3em;
+    /* border: 1px solid blue; */
+  }
+
+  .nav-li:hover {
+    background-color: var(--very-light-gray);
+  }
+
+  .nav-links .nav-li a {
+    display: inline-block;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.nav-li > a {
   display: block;
   font-size: 1.2rem;
   margin: 0.8em;
@@ -134,74 +190,13 @@ nav {
   opacity: 1;
 }
 
-/*
-
-@media (min-width: 500px) {
-  div.nav-links {
-    display: inline;
-  }
-
-  nav .nav-links ul {
-    border: 2px solid red;
-    border-radius: 0;
-    display: inline-block;
-    margin: 0;
-    padding: 1em;
-    visibility: visible;
-    width: auto;
-  }
-
-  .nav-links ul li {
-    border: 2px solid blue;
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links ul li a {
-    display: inline;
-  }
-
-  .open-menu-btn {
-    visibility: hidden;
-  }
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-links ul {
-  background-color: white;
-  border: 2px solid var(--dark-blue);
-  border-radius: 0.5em;
-  display: inline-block;
-  list-style-type: none;
-  margin-top: 2em;
-  text-align: center;
-  width: 80%;
-  z-index: 100;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  color: var(--dark-blue);
-  margin: 1em 0;
-  background-color: white;
-}
-
-.hidden-menu {
-  visibility: hidden;
-} */
-
 #home-div {
   height: 80vh;
   /* background-color: red; */
   background-image: url(../images/hero-section/laptop-desk-medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* outline: 2px solid black; */
+  /* border: 2px solid black; */
   width: 100%;
 }
 
@@ -265,6 +260,10 @@ nav {
   background-color: var(--very-light-gray);
   border-radius: 0.5em;
   overflow: hidden;
+}
+
+.project-image > img {
+  width: 100%;
 }
 
 .project-description {
