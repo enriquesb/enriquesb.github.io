@@ -14,18 +14,20 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <nav>
-      <img class="esb-logo" src="images/ESB logo.svg" alt="personal logo" />
-      <img class="open-menu-btn" src="images/nav-bar/icon-hamburger.svg" alt="open menu button" />
-      <img class="close-menu-btn nav-btn-hide" src="images/nav-bar/icon-close.svg" alt="close menu button" />
-      <div class="nav-links">
-        <ul class="nav-ul">
-          <li class="nav-li"><a href="#about-div">About me</a></li>
-          <li class="nav-li"><a href="#projects-div">Projects</a></li>
-          <li class="nav-li"><a href="#contact-div">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <nav>
+        <img class="esb-logo" src="images/ESB logo.svg" alt="personal logo" />
+        <img class="open-menu-btn" src="images/nav-bar/icon-hamburger.svg" alt="open menu button" />
+        <img class="close-menu-btn nav-btn-hide" src="images/nav-bar/icon-close.svg" alt="close menu button" />
+        <div class="nav-links hide-menu">
+          <ul class="nav-ul">
+            <li class="nav-li"><a href="#about-div" onclick="closeMenu()">About me</a></li>
+            <li class="nav-li"><a href="#projects-div" onclick="closeMenu()">Projects</a></li>
+            <li class="nav-li"><a href="#contact-div" onclick="closeMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div id="home-div">
       <div class="container">
@@ -33,8 +35,12 @@
           <h1>Hello! I'm Enrique.</h1>
           <h1>Engineer and Web Developer.</h1>
           <div class="home-icons">
-            <img src="images/icons/github_logo-gradient.svg" alt="github logo" />
-            <img src="images/icons/linkedin_logo-gradient.svg" alt="github logo" />
+            <a href="https://www.linkedin.com/in/enriquesb/" target="_blank"
+              ><img src="images/icons/linkedin_logo-gradient.svg" alt="github logo"
+            /></a>
+            <a href="https://github.com/enriquesb" target="_blank"
+              ><img src="images/icons/github_logo-gradient.svg" alt="github logo"
+            /></a>
           </div>
         </div>
       </div>
@@ -78,9 +84,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="projects-div">
-        <h2>PROJECTS</h2>
+    <div id="projects-div">
+      <h2>PROJECTS</h2>
+      <div class="container">
         <div class="project-card">
           <div class="project-image">
             <img src="images/projects-ss/ss-crud-flights.png" alt="Portfolio project screenshot" />
@@ -97,18 +105,34 @@
             <a href="https://github.com/enriquesb/crud-app-flights" class="btn-project" target="_blank">Source Code</a>
           </div>
         </div>
-      </div>
-      <div id="contact-div">
-        <h3>CONTACT</h3>
-        <div class="contact-icons">
-          <a href="https://github.com/enriquesb" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/enriquesb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:enriquesb1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/projects-ss/ss-to-do-app-react.png" alt="Portfolio project screenshot" />
+          </div>
+          <div class="project-description">
+            <h3>To-do App with ReactJS</h3>
+            <p>
+              In this project, I built a to-do app with <b>React</b>, using Hooks such as useState and useEffect. Users
+              can add and delete tasks to the list, as well as cross them out. This app stores the tasks in the local
+              storage of the browser.
+            </p>
+            <a href="https://animated-pavlova-10b51a.netlify.app/" class="btn-project" target="_blank">Live Demo</a>
+            <a href="https://github.com/enriquesb/todo-react" class="btn-project" target="_blank">Source Code</a>
+          </div>
         </div>
       </div>
-      <footer>
-        <p>© 2023, Built by Enrique SB.</p>
-      </footer>
     </div>
+
+    <div id="contact-div">
+      <h3>CONTACT</h3>
+      <div class="contact-icons">
+        <a href="https://github.com/enriquesb" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/enriquesb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:enriquesb1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <footer>
+      <p>© 2023, Built by Enrique SB.</p>
+    </footer>
   </body>
 </html>

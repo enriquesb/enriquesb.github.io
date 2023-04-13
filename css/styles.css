@@ -38,6 +38,10 @@ h3 {
   color: var(--dark-blue);
 }
 
+h1 {
+  font-size: 1.7rem;
+}
+
 h2 {
   margin-bottom: 0.5em;
   text-align: center;
@@ -92,7 +96,7 @@ nav {
   position: absolute;
   top: 3rem;
   width: 100%;
-  height: 100%;
+  height: 80%;
   margin-top: 0;
   padding-top: 0;
   transform: scale(1, 0);
@@ -102,6 +106,10 @@ nav {
 
 .nav-menu-show {
   transform: scale(1, 1);
+}
+
+.hide-menu {
+  visibility: hidden;
 }
 
 .nav-btn-hide {
@@ -117,7 +125,28 @@ nav {
   border-radius: 0.5em;
 }
 
+.nav-li > a {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0.8em;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.nav-links a {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-links.nav-menu-show a {
+  opacity: 1;
+}
+
 @media (min-width: 500px) {
+  .hide-menu {
+    visibility: visible;
+  }
+
   .open-menu-btn,
   .close-menu-btn {
     display: none;
@@ -171,23 +200,12 @@ nav {
     padding: 0;
     margin: 0;
   }
-}
 
-.nav-li > a {
-  display: block;
-  font-size: 1.2rem;
-  margin: 0.8em;
-  text-decoration: none;
-  color: var(--dark-blue);
-}
-
-.nav-links a {
-  opacity: 0;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
-.nav-links.nav-menu-show a {
-  opacity: 1;
+  /* Let container for desktop version only */
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
 }
 
 #home-div {
@@ -198,6 +216,12 @@ nav {
   background-size: cover;
   /* border: 2px solid black; */
   width: 100%;
+}
+
+@media (min-width: 900px) {
+  #home-div {
+    background-image: url(../images/hero-section/laptop-desk-big.jpg);
+  }
 }
 
 #home-div > .container {
@@ -213,27 +237,53 @@ nav {
   text-align: center;
 }
 
-.home-icons > img {
+@media (min-width: 850px) {
+  h1 {
+    font-size: 3rem;
+    font-size: clamp(1.7rem, 3.5vw + 0.5rem, 3rem);
+  }
+
+  #home-div {
+    background-position: top center;
+  }
+
+  .home-content {
+    text-align: left;
+  }
+}
+
+.home-icons img {
   height: 2.5em;
   margin: 1em 0.2em;
   display: inline;
 }
 
-/* Let container for desktop version only */
-/* .container {
-  max-width: 60rem;
-  margin: 0 auto;
-} */
-
 #about-div {
   text-align: center;
   background-color: white;
-  padding: 1em 1em;
+  padding: 2em 1em;
 }
 
 .skills-div {
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
+
+@media (min-width: 850px) {
+  #about-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #about-div > div {
+    width: 40%;
+  }
+
+  .skills-div {
+    margin-top: 0;
+  }
+}
+
 .webdev-skills {
   display: flex;
   flex-grow: row;
@@ -260,6 +310,30 @@ nav {
   background-color: var(--very-light-gray);
   border-radius: 0.5em;
   overflow: hidden;
+}
+
+.project-card + .project-card {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 800px) {
+  #projects-div {
+    padding-bottom: 2em;
+  }
+
+  #projects-div > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    width: 49%;
+  }
+
+  .project-card + .project-card {
+    margin-top: 0;
+  }
 }
 
 .project-image > img {

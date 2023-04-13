@@ -12,4 +12,16 @@ closeBtn.addEventListener("click", () => {
   closeBtn.className = "close-menu-btn nav-btn-hide";
   openBtn.className = "open-menu-btn";
   navLinks.className = "nav-links";
+  setTimeout(() => {
+    navLinks.className = "nav-links hide-menu";
+  }, "400");
 });
+
+function closeMenu() {
+  closeBtn.className = "close-menu-btn nav-btn-hide";
+  openBtn.className = "open-menu-btn";
+  navLinks.className = "nav-links";
+  setTimeout(() => {
+    navLinks.className = "nav-links hide-menu";
+  }, "400");
+}
