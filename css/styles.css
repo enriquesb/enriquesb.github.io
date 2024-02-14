@@ -301,7 +301,11 @@ nav {
   padding-bottom: 1em;
 }
 
-#projects-div {
+#work-experience .container {
+  justify-content: center;
+}
+
+.projects-div {
   background-color: var(--light-grayish-blue);
   padding: 1em;
 }
@@ -310,6 +314,14 @@ nav {
   background-color: var(--very-light-gray);
   border-radius: 0.5em;
   overflow: hidden;
+}
+
+.project-card h4 {
+  margin-bottom: 0.5em;
+}
+
+.work-date {
+  margin: 0.5em 0;
 }
 
 .project-card + .project-card {
@@ -321,7 +333,7 @@ nav {
     padding-bottom: 2em;
   }
 
-  #projects-div > .container {
+  .projects-div > .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
