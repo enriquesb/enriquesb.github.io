@@ -24,14 +24,6 @@ select {
   font: inherit;
 }
 
-/* img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-} */
-
 h1,
 h2,
 h3 {
@@ -164,7 +156,6 @@ nav {
     position: static;
     width: auto;
     height: auto;
-    /* border: 1px solid black; */
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -173,7 +164,6 @@ nav {
   .nav-links ul {
     background-color: transparent;
     margin-top: 0;
-    /* border: 1px solid red; */
     width: auto;
     border-radius: 0;
     display: inline-block;
@@ -187,7 +177,6 @@ nav {
     height: auto;
     padding: 0.8125rem 0.25em;
     margin: 0 0.3em;
-    /* border: 1px solid blue; */
   }
 
   .nav-li:hover {
@@ -210,11 +199,9 @@ nav {
 
 #home-div {
   height: 80vh;
-  /* background-color: red; */
   background-image: url(../images/hero-section/laptop-desk-medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 2px solid black; */
   width: 100%;
 }
 
@@ -232,7 +219,6 @@ nav {
 }
 
 .home-content {
-  /* outline: 2px solid green; */
   padding: 0 1em;
   text-align: center;
 }
