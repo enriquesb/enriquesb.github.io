@@ -134,7 +134,7 @@ nav {
   opacity: 1;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .hide-menu {
     visibility: visible;
   }
@@ -173,10 +173,6 @@ nav {
 
   .nav-li {
     display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 0.8125rem 0.25em;
-    margin: 0 0.3em;
   }
 
   .nav-li:hover {
@@ -186,8 +182,8 @@ nav {
   .nav-links .nav-li a {
     display: inline-block;
     opacity: 1;
-    padding: 0;
-    margin: 0;
+    padding: 0.8125rem 0.25em;
+    margin: 0 0.3em;
   }
 
   /* Let container for desktop version only */
@@ -363,6 +359,11 @@ nav {
 #contact-div > h3 {
   color: white;
   font-size: 1.1em;
+}
+
+#contact-div > p {
+  color: white;
+  font-weight: 100;
 }
 
 .contact-icons > a {
